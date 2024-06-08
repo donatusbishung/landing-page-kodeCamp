@@ -34,15 +34,15 @@ function Projects() {
   return (
     <div>
       <Header />
-      <div className="container-sm d-flex flex-column gap-5">
+      <div className="container-sm d-flex flex-column gap-5 __space_from_top">
         <div className="mt-5">
-          <h1 className="grey-text">Our</h1>
+          <h1 className="grey-text mb-0">Our</h1>
           <p className="fw-bold fs-1">Projects</p>
         </div>
         <div className="d-flex flex-column gap-5">
           {projectData.map((data) => (
             <div className="d-flex flex-column flex-lg-row">
-              <img src={data.image} alt="Image" className="image-fluid" />
+              <img src={data.image} alt="Image" className="img-fluid" />
               <div className="light_grey_bg p-4 d-flex flex-column gap-5">
                 <h1 className="grey-text project_header">{data.header}</h1>
                 <p className="projects_parag">{data.paragraph}</p>

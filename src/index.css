@@ -5,6 +5,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.__space_from_top {
+  margin-top: 3rem;
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -142,4 +156,99 @@ form > textarea {
 .project_header {
   font-size: 40px;
   font-weight: 300;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* media for navbar */
+
+@media only screen and (max-width: 700px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .__active {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .nav-btn {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive-nav {
+    transform: none;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-weight: 300;
+    font-size: 32px;
+    /* line-height: 64px; */
+  }
+
+  .first_one h1 {
+    font-size: 100px;
+    font-weight: 900;
+  }
+
+  .first_one p {
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 36px; */
+  }
+
+  .__space_from_top {
+    margin-top: 1rem;
+  }
+
+  ._gallery_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.7rem;
+  }
+
+  .__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .nav-text {
+    font-size: 1.5rem;
+  }
 }
