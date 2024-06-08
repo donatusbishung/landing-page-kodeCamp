@@ -12,7 +12,7 @@ function Footer() {
       <div className="container-sm footer-div text-light">
         <div className="img_info_contacts d-flex flex-column flex-md-row flex-lg-row gap-5 justify-content-between pt-5">
           <div>
-            <img src="footer-logo.png" alt="" />
+            <img src="footer-logo.png" alt="" className="img-fluid" />
           </div>
           <div>
             <p className="__footerHeaders">Information</p>
