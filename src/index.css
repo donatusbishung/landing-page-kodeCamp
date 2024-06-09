@@ -33,6 +33,11 @@ ul .__headerLi {
   letter-spacing: 0.2rem;
 }
 
+ul li .list_items {
+  text-decoration: none;
+  color: black;
+}
+
 .__active {
   border-top: 2px solid black;
   border-bottom: 2px solid black;

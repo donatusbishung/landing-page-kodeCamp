@@ -40,8 +40,8 @@ function Projects() {
           <p className="fw-bold fs-1">Projects</p>
         </div>
         <div className="d-flex flex-column gap-5">
-          {projectData.map((data) => (
-            <div className="d-flex flex-column flex-lg-row">
+          {projectData.map((data, index) => (
+            <div key={index} className="d-flex flex-column flex-lg-row">
               <img src={data.image} alt="Image" className="img-fluid" />
               <div className="light_grey_bg p-4 d-flex flex-column gap-5">
                 <h1 className="grey-text project_header">{data.header}</h1>

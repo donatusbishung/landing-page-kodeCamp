@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Gallery from "./Pages/Gallery/Gallery";
 import Projects from "./Pages/Projects/Projects";
@@ -16,31 +17,27 @@ function Header() {
     <div>
       <header className="fixed-top bg-light">
         <div className="container-sm justify-content-between d-flex align-items-center">
-          <img src="logo.png" alt="" srcset="" className="img-fluid pt-2" />
+          <Link to="/">
+            <img src="logo.png" alt="" srcset="" className="img-fluid pt-2" />
+          </Link>
           <nav
             ref={navRef}
             className=" d-flex justify-content-between p-3 align-items-center">
             <ul className="d-flex pt-2">
-              <li
-                className="__active __headerLi"
-                onClick={() => {
-                  navigate("/");
-                }}>
-                <a>MAIN</a>
+              <li className="__active __headerLi">
+                <Link className="list_items" to="/">
+                  MAIN
+                </Link>
               </li>
-              <li
-                className="__headerLi"
-                onClick={() => {
-                  navigate("/Gallery");
-                }}>
-                <a>GALLERY</a>
+              <li className="__headerLi">
+                <Link className="list_items" to="/Gallery">
+                  GALLERY
+                </Link>
               </li>
-              <li
-                className="__headerLi"
-                onClick={() => {
-                  navigate("/Projects");
-                }}>
-                <a>PROJECTS</a>
+              <li className="__headerLi">
+                <Link className="list_items" to="/Projects">
+                  PROJECTS
+                </Link>
               </li>
               <li className="__headerLi">
                 <a>CERTIFICATIONS</a>
