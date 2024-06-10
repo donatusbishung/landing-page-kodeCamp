@@ -35,7 +35,7 @@ function Gallery() {
         <div className="d-flex align-items-center gap-3 mb-5">
           <div>
             <p className="grey-text nav-text">
-              01 <span className="fs-2">/</span> 02
+              0<br />1 <span className="fs-2">/</span> 02
             </p>
           </div>
           <div className="__navigation d-flex gap-4">

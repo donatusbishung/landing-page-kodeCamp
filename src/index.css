@@ -170,7 +170,7 @@ form > textarea {
 
 /* media for navbar */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 840px) {
   .nav-btn {
     visibility: visible;
     opacity: 1;
@@ -217,11 +217,19 @@ form > textarea {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
   h1 {
     font-weight: 300;
     font-size: 32px;
     /* line-height: 64px; */
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
   }
 
   .first_one h1 {
@@ -253,15 +261,38 @@ form > textarea {
     gap: 1.5rem;
   }
 
+  .__navigation button {
+    margin-bottom: 1.5rem !important;
+  }
+
   .nav-text {
     font-size: 1.5rem;
   }
 
   ._img_none {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
 
   .img_full {
-    max-width: 100%;
+    /* width: 100%; */
+    display: none;
+  }
+
+  .__about_section {
+    padding: 1rem !important;
+  }
+
+  .para_small_contact {
+    margin-bottom: 0.2rem !important;
+  }
+
+  .numbering {
+    padding-bottom: 0.2rem !important;
+  }
+
+  .contact_header {
+    margin-top: 1rem !important;
+    margin-bottom: 3px !important;
   }
 }

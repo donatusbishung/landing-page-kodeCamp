@@ -39,8 +39,8 @@ function Home() {
           </div>
         </main>
         <section id="about_us" className="light_grey_bg">
-          <div className="__about_section p-5 d-flex flex-column flex-md-row flex-lg-row align-items-center gap-5">
-            <div className="abt_images d-flex gap-2">
+          <div className="__about_section p-5 d-flex flex-column flex-lg-row align-items-center gap-5">
+            <div className="abt_images d-flex gap-2 align-items-center">
               <div className="d-flex flex-column gap-3">
                 <img src="Rectangle 8.png" alt="" className="_img_none" />
                 <img
@@ -49,7 +49,9 @@ function Home() {
                   className="img-fluid _img_none"
                 />
               </div>
-              <img src="Rectangle 9.png" alt="photo" className="img_full" />
+              <div className="img_full">
+                <img src="Rectangle 9.png" alt="photo" className="img_full" />
+              </div>
             </div>
             <div className="d-flex flex-column gap-3">
               <h1 className="grey-text project_header">About</h1>
@@ -76,14 +78,14 @@ function Home() {
           <div className="numbering d-flex flex-column flex-md-row flex-lg-row justify-content-between gap-5 pt-5 pb-5">
             <div className="first_one d-flex align-items-center gap-3">
               <h1 className="grey-text">1</h1>
-              <p>
+              <p className="para_small_contact">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur, lectus et facilisis placerat.
               </p>
             </div>
             <div className="first_one d-flex align-items-center gap-3">
               <h1 className="grey-text">2</h1>
-              <p>
+              <p className="para_small_contact">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 efficitur, lectus et facilisis placerat.
               </p>
@@ -93,7 +95,7 @@ function Home() {
         <section
           id="contact_us"
           className="d-flex flex-column justify-content-between gap-5">
-          <h1 className="grey-text mt-5">Contact Us</h1>
+          <h1 className="grey-text contact_header mt-5">Contact Us</h1>
           <div className="form_section d-flex flex-column flex-md-row flex-lg-row justify-content-between gap-5">
             <form action="" className="d-flex flex-column gap-4">
               <input type="text" placeholder="Name" />
