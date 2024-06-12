@@ -32,19 +32,15 @@ function Gallery() {
           <img src="Rectangle 30.png" alt="" className="img-fluid" />
           <img src="Rectangle 31.png" alt="" className="img-fluid" />
         </div>
-        <div className="d-flex align-items-center gap-3 mb-5">
+        <div className="d-inline-flex align-items-center gap-3 mb-5">
           <div>
-            <p className="grey-text nav-text">
-              0<br />1 <span className="fs-2">/</span> 02
+            <p className="grey-text nav-text fs-2">
+              01 <span className="fs-2">/</span> 02
             </p>
           </div>
-          <div className="__navigation d-flex gap-4">
-            <button className="my-2 border-0 px-4 py-1">
-              <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
-            <button className="my-2 border-0 px-4 py-1">
-              <FontAwesomeIcon icon={faArrowRight} />
-            </button>
+          <div className="__navigation d-flex align-items-center gap-4">
+            <button className="my-2 border-0 px-3 fs-1">&larr;</button>
+            <button className="my-2 border-0 px-3 fs-1">&rarr;</button>
           </div>
         </div>
       </div>

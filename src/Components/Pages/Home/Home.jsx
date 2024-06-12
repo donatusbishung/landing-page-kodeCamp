@@ -12,36 +12,40 @@ function Home() {
     <div>
       <Header />
       <div className="container-sm __space_from_top">
-        <main className="d-flex flex-column-reverse flex-md-row flex-lg-row justify-content-between align-items-center pb-5">
-          <div className="__project_intro d-flex  flex-column gap-3">
+        <main className="d-flex flex-column-reverse flex-md-column-reverse flex-lg-row justify-content-between align-items-center pb-5">
+          <div className="__project_intro d-flex flex-column gap-5">
             <div>
-              <h1 className="grey-text mb-0">Project</h1>
-              <p className="fw-bold fs-1">Lorum</p>
+              <h1 className="grey-text">
+                Project <br />
+                <span className="fw-bold fs-1 text-black">Lorum</span>
+              </h1>
             </div>
-            <div className="__navigation">
-              <div className=" d-flex gap-4">
-                <button className="my-2 border-0 px-3 py-2">
-                  <FontAwesomeIcon icon={faArrowLeft} />
+            <div className="__navigation d-flex f flex-column gap-5">
+              <div className=" d-flex gap-4 navigationBtn">
+                <button className="my-2 border-0 px-3 py-2 fs-3">
+                  {" "}
+                  &larr;
                 </button>
-                <button className="my-2 border-0 px-3 py-2">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </button>
+                <button className="my-2 border-0 px-3 py-2 fs-3">&rarr;</button>
               </div>
               <div>
-                <p className="grey-text nav-text">
+                <p className="grey-text nav-text fs-2">
                   01 <span>/</span> 02
                 </p>
               </div>
             </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 imageDiv">
             <img src="main-img.png" alt="" className="__main-image img-fluid" />
+            <button className="imageDivBtn  border-0">
+              VIEW PROJECT <span className="fs-3">&rarr;</span>
+            </button>
           </div>
         </main>
         <section id="about_us" className="light_grey_bg">
           <div className="__about_section p-5 d-flex flex-column flex-lg-row align-items-center gap-5">
-            <div className="abt_images d-flex gap-2 align-items-center">
-              <div className="d-flex flex-column gap-3">
+            <div className="abt_images d-flex gap-4 align-items-center">
+              <div className="d-flex flex-column gap-5">
                 <img src="Rectangle 8.png" alt="" className="_img_none" />
                 <img
                   src="Rectangle 10.png"
@@ -53,7 +57,7 @@ function Home() {
                 <img src="Rectangle 9.png" alt="photo" className="img_full" />
               </div>
             </div>
-            <div className="d-flex flex-column gap-3">
+            <div className="d-flex flex-column gap-5">
               <h1 className="grey-text project_header">About</h1>
               <p className="projects_parag">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -64,7 +68,7 @@ function Home() {
                 electronic typesetting, remaining essentially unchanged.
               </p>
               <div>
-                <button className="project_btn border-0">
+                <button className="project_btn border-0 p-4">
                   READ MORE <FontAwesomeIcon icon={faArrowRight} />
                 </button>
               </div>
@@ -92,22 +96,40 @@ function Home() {
             </div>
           </div>
         </section>
+        <section id="our-projects">
+          <div className="our_projects_section d-flex flex-column gap-4 mt-4">
+            <div className="d-flex flex-column flex-md-column project-img flex-lg-row  gap-1">
+              <img src="Rectangle 17.png" alt="" className="img-fluid" />
+              <img src="image 15.png" alt="" className="img-fluid" />
+            </div>
+            <div className="d-flex flex-column flex-md-column flex-lg-row gap-2">
+              <img src="image 16.png" alt="" className="img-fluid" />
+              <img src="image 17.png" alt="" className="img-fluid" />
+              <img src="image 18.png" alt="" className="img-fluid" />
+            </div>
+            <div className="d-flex align-self-end">
+              <button className="contact_btn p-4">
+                ALL PROJECTS <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </div>
+          </div>
+        </section>
         <section
           id="contact_us"
           className="d-flex flex-column justify-content-between gap-5">
           <h1 className="grey-text contact_header mt-5">Contact Us</h1>
-          <div className="form_section d-flex flex-column flex-md-row flex-lg-row justify-content-between gap-5">
+          <div className="form_section d-flex flex-column flex-md-column-reverse flex-lg-row justify-content-between gap-5">
             <form action="" className="d-flex flex-column gap-4">
               <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Phone Number" />
-              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Phone Number&#x2A;" />
+              <input type="email" placeholder="Email&#x2A;" />
               <input type="text" placeholder="Interested In" />
-              <textarea name="" placeholder="Message" id=""></textarea>
+              <textarea name="" placeholder="Message&#x2A;" id=""></textarea>
             </form>
             <img src="contact_us.png" alt="" className="img-fluid" />
           </div>
           <div>
-            <button className="contact_btn mb-5">
+            <button className="contact_btn mb-5 p-4">
               SEND EMAIL <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>

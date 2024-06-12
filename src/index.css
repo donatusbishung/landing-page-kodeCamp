@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  /* background-color: black; */
+  /* background-color: black; &#42;  */
   font-family: "Roboto", sans-serif;
 }
 
@@ -72,6 +72,7 @@ h1 {
 .first_one h1 {
   font-size: 200px;
   font-weight: 900;
+  color: #f2f2f2;
 }
 
 .first_one p {
@@ -105,7 +106,7 @@ form > textarea {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -146,7 +147,7 @@ form > textarea {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -159,8 +160,9 @@ form > textarea {
 }
 
 .project_header {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .nav-btn {
@@ -168,9 +170,40 @@ form > textarea {
   display: none;
 }
 
-/* media for navbar */
+.__navigation button {
+  border: 1px solid #f2f2f2;
+}
 
-@media only screen and (max-width: 840px) {
+.imageDiv {
+  position: relative;
+}
+
+.imageDivBtn {
+  position: absolute;
+  background-color: white !important;
+  color: #333333;
+  bottom: 0;
+  /* top: 50%; */
+  left: -0.1%;
+  right: 75%;
+  /* transform: translate(-20%, -10%); */
+  font-size: 12px;
+  /* line-height: 12px; */
+  letter-spacing: 0.05rem;
+  padding: 10px 30px !important;
+}
+
+/* media for navbar */
+@media only screen and (max-width: 885px) {
+  form input {
+    width: 100%;
+  }
+  form textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 601px) {
   .nav-btn {
     visibility: visible;
     opacity: 1;
@@ -217,6 +250,92 @@ form > textarea {
   }
 }
 
+@media only screen and (max-width: 841px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .__active {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .nav-btn {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive-nav {
+    transform: none;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 2rem;
+  }
+
+  .imageDivBtn {
+    position: absolute;
+    background-color: white !important;
+    color: #333333;
+    bottom: 0;
+    /* top: 50%; */
+    /* left: -0.1%; */
+    right: 60%;
+    /* transform: translate(-20%, -10%); */
+    font-size: 12px;
+    /* line-height: 12px; */
+    letter-spacing: 0.05rem;
+    padding: 10px 30px !important;
+  }
+
+  .__project_intro h1 {
+    font-size: 23px;
+  }
+
+  .navigationBtn button {
+    border: 1px solid #f2f2f2;
+    /* padding: 10px 1px; */
+  }
+
+  .__navigation {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    margin-top: -2rem !important;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   h1 {
     font-weight: 300;
@@ -258,7 +377,7 @@ form > textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .__navigation button {
@@ -294,5 +413,48 @@ form > textarea {
   .contact_header {
     margin-top: 1rem !important;
     margin-bottom: 3px !important;
+  }
+
+  .__navigation {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .__project_intro {
+    gap: 1px !important;
+  }
+
+  .imageDivBtn {
+    position: absolute;
+    background-color: white !important;
+    color: #333333;
+    bottom: 0;
+    /* top: 50%; */
+    /* left: -0.1%; */
+    right: 49%;
+    /* transform: translate(-20%, -10%); */
+    font-size: 12px;
+    /* line-height: 12px; */
+    letter-spacing: 0.05rem;
+    padding: 10px 30px !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .imageDivBtn {
+    position: absolute;
+    background-color: white !important;
+    color: #333333;
+    bottom: 0;
+    /* top: 50%; */
+    /* left: -0.1%; */
+    right: 44%;
+    /* transform: translate(-20%, -10%); */
+    font-size: 12px;
+    /* line-height: 12px; */
+    letter-spacing: 0.05rem;
+    padding: 10px 30px !important;
   }
 }
