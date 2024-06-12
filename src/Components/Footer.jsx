@@ -24,20 +24,20 @@ function Footer() {
           </div>
           <div className="d-flex flex-column gap-3">
             <p className="__footerHeaders">Contacts</p>
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-3">
               <FontAwesomeIcon icon={faLocationDot} />
               <div>
                 <p className="__footerParag __lineHeight">1234 Sample Street</p>
                 <p className="__footerParag">Austin Texas 78704</p>
               </div>
             </div>
-            <div className="d-flex align-items-center gap-2">
+            <div className="d-flex gap-3">
               <FontAwesomeIcon icon={faPhone} />
               <div>
                 <p className="__footerParag ">512.333.2222</p>
               </div>
             </div>
-            <div className="d-flex align-items-center gap-2">
+            <div className="d-flex gap-3">
               <FontAwesomeIcon icon={faEnvelope} />
               <div>
                 <p className="__footerParag ">sampleemail@gmail.com</p>
