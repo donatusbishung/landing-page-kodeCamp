@@ -58,7 +58,7 @@ function Home() {
               </div>
             </div>
             <div className="d-flex flex-column gap-5">
-              <h1 className="grey-text project_header">About</h1>
+              <h1 className="grey-text about_header">About</h1>
               <p className="projects_parag">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
